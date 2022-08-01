@@ -1,0 +1,92 @@
+[
+  {
+    "id": "0",
+    "title": "Welcome",
+    "author": "cardstepper",
+    "description": "test",
+    "content": [
+      {
+        "type": "textonly",
+        "title": "Welcome to cardstepper!",
+        "content": "this is the thirst card"
+      },
+      {
+        "type": "longtask",
+        "title": "Navigation in the CardViewer",
+        "content": [
+          {
+            "title": "Navigation in the CardViewer",
+            "content": "test card 1"
+          },
+          {
+            "title": "Navigation in the CardViewer",
+            "content": "test card 2"
+          }
+        ]
+      },
+      {
+        "type": "textonly",
+        "title": "3rd card",
+        "content": "this is the thirst card"
+      },
+      {
+        "type": "textonly",
+        "title": "4th card",
+        "content": "this is the thirst card"
+      },
+      {
+        "type": "textonly",
+        "title": "5th card",
+        "content": "this is the second card"
+      },
+      {
+        "type": "textonly",
+        "title": "6th card",
+        "content": "this is the second card"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "title": "Writing",
+    "author": "Johann",
+    "description": "test",
+    "content": [
+      {
+        "type": "textonly",
+        "title": "Welcome to Writing!",
+        "content": "this is the thirst card"
+      },
+      {
+        "type": "textonly",
+        "title": "3rd card",
+        "content": "this is the thirst card"
+      },
+      {
+        "type": "longtask",
+        "title": "Navigation in the CardViewer",
+        "content": [
+          {
+            "title": "Navigation in the CardViewer",
+            "content": "test card 1"
+          },
+          {
+            "title": "Navigation in the CardViewer",
+            "content": "test card 2"
+          }
+        ]
+      },
+      {
+        "type": "textonly",
+        "title": "4th card",
+        "content": "this is the thirst card"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "3rd card",
+    "author": "test",
+    "description": "test"
+  }
+]
