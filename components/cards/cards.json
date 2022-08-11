@@ -1,6 +1,6 @@
 [
   {
-    "id": "0",
+    "id": 0,
     "title": "Welcome",
     "author": "cardstepper",
     "description": "test",
@@ -20,6 +20,18 @@
           },
           {
             "title": "Navigation in the CardViewer",
+            "content": "test card 1"
+          },
+          {
+            "title": "Navigation in the CardViewer",
+            "content": "test card 1"
+          },
+          {
+            "title": "Navigation in the CardViewer",
+            "content": "test card 1"
+          },
+          {
+            "title": "",
             "content": "test card 2"
           }
         ]
@@ -30,24 +42,70 @@
         "content": "this is the thirst card"
       },
       {
-        "type": "textonly",
+        "type": "option",
         "title": "4th card",
-        "content": "this is the thirst card"
+        "description": "test description",
+        "content": [
+          {
+            "title": "test option 1"
+          },
+          {
+            "title": "test option 2"
+          },
+          {
+            "title": "test option 3"
+          }
+        ]
+      },
+      {
+        "type": "pathOption",
+        "content": [
+          {
+            "type": "textonly",
+            "title": "option 1",
+            "content": "this is the second card"
+          },
+          {
+            "type": "textonly",
+            "title": "option 2",
+            "content": "this is the second card"
+          },
+          {
+            "type": "textonly",
+            "title": "option 3",
+            "content": "this is the second card"
+          }
+        ]
       },
       {
         "type": "textonly",
-        "title": "5th card",
-        "content": "this is the second card"
+        "title": "last card",
+        "content": "test"
       },
       {
-        "type": "textonly",
-        "title": "6th card",
-        "content": "this is the second card"
+        "type": "pathOption",
+        "content": [
+          {
+            "type": "textonly",
+            "title": "option 1",
+            "content": "this is the second card"
+          },
+          {
+            "type": "textonly",
+            "title": "option 2",
+            "content": "this is the second card"
+          },
+          {
+            "type": "textonly",
+            "title": "option 3",
+            "content": "this is the second card"
+          }
+        ]
       }
     ]
   },
   {
-    "id": "1",
+    "id": 1,
     "title": "Writing",
     "author": "Johann",
     "description": "test",
@@ -71,7 +129,7 @@
             "content": "test card 1"
           },
           {
-            "title": "Navigation in the CardViewer",
+            "title": "",
             "content": "test card 2"
           }
         ]
@@ -84,9 +142,10 @@
     ]
   },
   {
-    "id": "2",
+    "id": 2,
     "title": "3rd card",
     "author": "test",
-    "description": "test"
+    "description": "test",
+    "content": []
   }
 ]

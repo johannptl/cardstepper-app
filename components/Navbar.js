@@ -17,7 +17,9 @@ const Tab = createBottomTabNavigator();
 export default function Navbar() {
   return (
     <Tab.Navigator
+      initialRouteName={"Home"}
       screenOptions={{
+        initialRouteName: "Home",
         tabBarShowLabel: false,
         tabBarStyle: {
           backgroundColor: "white",
@@ -34,8 +36,7 @@ export default function Navbar() {
           },
         },
       }}
-    > 
-    
+    >
       {/**
        * Search
        *
@@ -114,7 +115,7 @@ export default function Navbar() {
       {/**
        * Home
        */}
-      
+
       <Tab.Screen
         name={"Home"}
         component={HomeScreen}

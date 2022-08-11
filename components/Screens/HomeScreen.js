@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { SearchBar } from 'react-native-elements';
+import React, { useState } from "react";
+import { SearchBar } from "react-native-elements";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import CardView from "./CardScreen";
 import { sizeH, sizeW } from "../size";
@@ -69,7 +69,7 @@ function Card({ navigation, route }) {
 
 function SelectCard({ navigation }) {
   const [search, setSearch] = useState("");
-  
+
   const updateSearch = (search) => {
     setSearch(search);
   };
@@ -77,19 +77,28 @@ function SelectCard({ navigation }) {
   return (
     <View style={styles.container}>
       <ScrollView>
-      <SearchBar
-        platform="ios"
-        inputStyle={{backgroundColor: WHITE}}
-        inputContainerStyle={{backgroundColor: WHITE, padding: 0, margin: 0}}
-        containerStyle={[styles.item, { borderWidth: 0 }]}
-        placeholder="Search for Cards ..."
-        onChangeText={updateSearch}
-        value={search}
-      />
+        <SearchBar
+          platform="ios"
+          inputStyle={{ backgroundColor: WHITE }}
+          inputContainerStyle={{
+            backgroundColor: WHITE,
+            padding: 0,
+            margin: 0,
+          }}
+          containerStyle={[styles.item, { borderWidth: 0 }]}
+          placeholder="Search for Cards ..."
+          onChangeText={updateSearch}
+          value={search}
+        />
         {cards.map((card, i) => (
           <TouchableOpacity
             style={{
-              display: getItemVisibility(card.title, card.author, card.id, search),
+              display: getItemVisibility(
+                card.title,
+                card.author,
+                card.id,
+                search
+              ),
             }}
             onPress={() =>
               navigation.navigate("Card", {
@@ -110,10 +119,10 @@ function SelectCard({ navigation }) {
 }
 
 function getItemVisibility(title, author, id, search) {
-  if (title.includes(search) || author.includes(search)) {
+  if (title.includes(search) || author.includes(search) || search == "#" + id) {
     return "flex";
   }
-  return "none"
+  return "none";
 }
 
 export default HomeScreen;
